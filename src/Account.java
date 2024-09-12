@@ -16,7 +16,7 @@ public class Account
     public void depoiste(float amount)
     {
         if(amount >0) {
-            this.balance += target;
+            this.balance += amount;
             System.out.println("amount is added sucessfully");
         }
         else
@@ -28,7 +28,7 @@ public class Account
     public void withdraw(float amount)
     {
         // if condition
-        this.balance -= target;
+        this.balance -= amount;
     }
     public float checkBalance()
     {

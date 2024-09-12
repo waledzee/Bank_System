@@ -4,12 +4,20 @@ public class Main {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+         Customer customer =new Customer("001","khaled",{"john@example.com", "123-456-7890"});
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+         Account account1 = new Account(444,1500,customer);
+        Account account2 = new Account(555,1600,customer);
+
+        customer1.addaccount(account1);
+        customer1.addaccount(account2);
+
+        account1.deposit(500.0f);
+
+        // Withdraw from the second account
+        account2.withdraw(2000.0f);
+
+        // Check updated balances
+        customer1.displayCustomerInfo();
     }
 }
