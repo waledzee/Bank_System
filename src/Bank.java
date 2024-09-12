@@ -1,3 +1,4 @@
+ import java.util.ArrayList;
 public class Bank {
     private Arraylist<Customer>customer;
 
