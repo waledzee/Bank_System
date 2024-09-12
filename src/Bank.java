@@ -8,7 +8,7 @@ public class Bank {
     }
     public void addCustomer(Customer customer)
     {
-        Customer.add(customer);
+        customers.add(customer);
         System.out.println("customer added");
     }
     public void removeCustomerByID(String customerId)

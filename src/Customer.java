@@ -1,17 +1,18 @@
 import java.util.ArrayList;
 
 public class Customer {
- public String name;
+
+    public String name;
  public String customerId;
  public String[] contactInfo ;
  ArrayList<Account> accounts;
 
-public Customer(String customerId,String name, String[] contactInfo,float balance)
+public Customer(String customerId,String name, String[] contactInfo)
  {
      this.customerId=customerId;
      this.name=name;
      this.contactInfo=contactInfo;
-     this.balance=balance;
+
      this.accounts = new ArrayList<>();
  }
  public String getName() {
@@ -20,7 +21,7 @@ public Customer(String customerId,String name, String[] contactInfo,float balanc
 
     public  String displayCustomerInfo()
     {
-        return "Customer Info : name "+name+ " Customer Id is : "+customerId+" customer balance is " +balance;
+        return "Customer Info : name "+name+ " Customer Id is : "+customerId;
     }
 
     public void addAccount(Account account) {
